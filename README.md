@@ -15,4 +15,8 @@ Pour pouvoir rendre ses projets il faut d'abord se connecter via la commande sui
 thp connect <EMAIL> <PASSWORD>
 ```
 
-Ensui
+Ensuite on peut rendre son projet du jour grâce à la commande ```submit``` 
+
+```bash
+thp submit <NomDuLien> <Lien>
+```
