@@ -12,7 +12,8 @@ struct Cli {
 #[derive(Subcommand, Debug)]
 enum Commands {
    
-    Submit(commands::submit::SubmitArgs)
+    Submit(commands::submit::SubmitArgs),
+    Connect(commands::connect::ConnectArgs)
 }
 
 fn main() {
@@ -20,6 +21,7 @@ fn main() {
 
     match cli.command {
         Commands::Submit(args) => commands::submit::run(args),
+        Commands::Connect(args) => commands::connect::run(args),
     }
 }
 
